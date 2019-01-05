@@ -1,0 +1,11 @@
+module gated_sr_latch(q,qinv,s,r,en);
+
+output q,qinv;
+input s,r,en;
+
+nand(q1,s,en);
+nand(q2,r,en);
+
+sr_latch sr1(q,qinv,q1,q2);
+
+endmodule

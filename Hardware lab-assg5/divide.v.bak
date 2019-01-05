@@ -1,0 +1,18 @@
+module divide(out,x,y);
+
+output [15:0]out;
+input  [15:0]x,y;
+reg [15:0]out;
+reg [15:0]a;
+
+always@(x,y)
+begin
+ a=x;
+ out=0; 
+  while(a>=y)
+  begin
+  out=out+1;
+  a=a-y;
+  end
+end
+endmodule 

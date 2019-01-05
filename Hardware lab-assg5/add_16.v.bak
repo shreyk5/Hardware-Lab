@@ -1,0 +1,9 @@
+module add_16(s,c,x,y,z);
+
+output [15:0]s;
+output c;
+input [15:0]x,y;
+input z;
+
+
+
